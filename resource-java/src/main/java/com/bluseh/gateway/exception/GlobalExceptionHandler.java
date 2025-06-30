@@ -1,4 +1,4 @@
-package com.bluseh.resource_java.exception;
+package com.bluseh.gateway.exception;
 
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.boot.web.reactive.error.ErrorWebExceptionHandler;
@@ -34,8 +34,7 @@ public class GlobalExceptionHandler implements ErrorWebExceptionHandler {
         if (ex instanceof NotFoundException) {
             result.put("code", 404);
             result.put("message", "服务未找到");
-            log.warn("Service not found: {}", ex.getMessage());
-        } else if (ex instanceof java.net.ConnectException) {
+log.warn("Service not found: {}", ex.getMessage());        } else if (ex instanceof java.net.ConnectException) {
             result.put("code", 503);
             result.put("message", "服务不可用");
             log.error("Service unavailable: {}", ex.getMessage());

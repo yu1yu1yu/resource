@@ -1,4 +1,4 @@
-package com.bluseh.resource_java;
+package com.bluseh.gateway;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

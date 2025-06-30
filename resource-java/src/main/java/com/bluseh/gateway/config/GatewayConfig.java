@@ -1,4 +1,4 @@
-package com.bluseh.resource_java.config;
+package com.bluseh.gateway.config;
 
 import org.springframework.cloud.gateway.route.RouteLocator;
 import org.springframework.cloud.gateway.route.builder.RouteLocatorBuilder;
