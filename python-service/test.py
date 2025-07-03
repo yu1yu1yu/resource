@@ -4,35 +4,8 @@ import requests
 爬取原始数据并保存，以便于后续提取
 '''
 
-cookies = {
-    'buvid3': '0A4791A2-C8DB-742E-A3F3-891AF1E888DA28242infoc',
-    'b_nut': '1746970527',
-    'rpdid': "|(kY)kJmmRm)0J'u~RYm~|lJl",
-    'SESSDATA': '6a674b6e%2C1762522570%2Cb00da%2A52CjBlpHSxk8zAxXmGUpOKTtGlZsjsTHtz6yZWAG3Vfu0UP8REbPansrWo8ESRdy17RS8SVk5OZHM3aWUya2FSWW9WOENLWFhaT1FIa0RjQm1sZEJoVklKaEJfX2ZUSXVvR0J0SVRYbzFGQlJibG9LdGE5ajcxSW44UDJaQ09OazhjSzVwazBfYXZ3IIEC',
-    'bili_jct': '560808942c0f640011f0196a1d04ba4d',
-    'DedeUserID': '91567405',
-    'DedeUserID__ckMd5': 'e65557090450a8fc',
-    '_uuid': '5DE2FEB1-E461-AD65-47D8-5FC92D3DE5B591799infoc',
-    'header_theme_version': 'CLOSE',
-    'enable_web_push': 'DISABLE',
-    'enable_feed_channel': 'ENABLE',
-    'buvid4': '91EA2C7B-515B-4135-B962-3D9B9492E04428242-025051121-lkAklX%2B8JZlP9z%2BHSyHEww%3D%3D',
-    'buvid_fp_plain': 'undefined',
-    'home_feed_column': '5',
-    'hit-dyn-v2': '1',
-    'fingerprint': '586fb78937f3259a054e0bb95a53bc90',
-    'buvid_fp': '732fced7f511fd9d4e356a1ebef392b1',
-    'bili_ticket': 'eyJhbGciOiJIUzI1NiIsImtpZCI6InMwMyIsInR5cCI6IkpXVCJ9.eyJleHAiOjE3NTE2Mjk4MjIsImlhdCI6MTc1MTM3MDU2MiwicGx0IjotMX0.FSoIkAMmwCBVaNBkwq2C_u_MRe6u1aDmHjcpULAsm-I',
-    'bili_ticket_expires': '1751629762',
-    'CURRENT_QUALITY': '80',
-    'browser_resolution': '1488-702',
-    'bmg_af_switch': '1',
-    'bmg_src_def_domain': 'i0.hdslb.com',
-    'sid': '7iarmc46',
-    'bp_t_offset_91567405': '1085318122367352832',
-    'b_lsid': '29744BE10_197CFAB5267',
-    'CURRENT_FNVAL': '4048',
-}
+# 防止隐私暴露，需要重新获取
+cookies = {}
 
 headers = {
     'accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7',
