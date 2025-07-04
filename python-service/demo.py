@@ -66,8 +66,22 @@ def get_audio(url: str):
     else:
         return response.status_code
 
+
+def load_cookies_from_file(file_path='cookies.json'):
+    """从JSON文件加载cookies"""
+    try:
+        with open(file_path, 'r', encoding='utf-8') as f:
+            return json.load(f)
+    except FileNotFoundError:
+        print(f"错误：找不到cookies文件 {file_path}")
+        return {}
+    except json.JSONDecodeError:
+        print(f"错误：{file_path} 不是有效的JSON格式")
+        return {}
+    
+
 # 防止隐私暴露，需要重新获取
-cookies = {}
+cookies = load_cookies_from_file()
 
 # 不要修改
 headers = {
